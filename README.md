@@ -26,5 +26,52 @@ Date:   Mon Oct 14 15:35:17 2024 +0100
  dam   main  ~  ejercicio-git-libro  cat > capitulos/capitulo1.txt
 Git es un sistema de control de versiones ideado por Linus Torvalds.
 
+ dam   main  ~  ejercicio-git-libro  git add .
+ dam   main  ~  ejercicio-git-libro  git commit -m "Añadido capítulo 1."
+[main e6ea4e5] Añadido capítulo 1.
+ 2 files changed, 31 insertions(+), 1 deletion(-)
+ rewrite README.md (100%)
+ create mode 100644 capitulos/capitulo1.txt
+ dam   main  ~  ejercicio-git-libro  git log
+commit e6ea4e56cd4ba7687e444bd5c289ef54a602ea83 (HEAD -> main)
+Author: alexfdb <alexanderfaustinodiazbautista@gmail.com>
+Date:   Mon Oct 14 15:47:46 2024 +0100
+
+    Añadido capítulo 1.
+
+commit cae8ad5fbdbd43b153bc0667a7d92a22e10864b0 (origin/main, origin/HEAD)
+Author: Alexander Faustino Diaz Bautista <AlexanderFaustinoDiazBautista@Gmail.com>
+Date:   Mon Oct 14 15:35:17 2024 +0100
+
+    Initial commit
+
 ```
 
+## Ejercicio 2
+
+Crear el fichero capitulo2.txt en la carpeta capítulos con el siguiente texto.
+
+El flujo de trabajo básico con Git consiste en:
+
+1- Hacer cambios en el repositorio.
+
+2- Añadir los cambios a la zona de intercambio temporal.
+
+3- Hacer un commit de los cambios.
+
+Añadir los cambios a la zona de intercambio temporal.(git que comando tengo que añadir).
+
+Hacer un commit de los cambios con el mensaje Añadido capítulo 2.
+
+Mostrar las diferencias entre la última versión y dos versiones anteriores. (git que comando tengo que añadir).
+
+    ```code
+
+ dam   main  ~  ejercicio-git-libro  cat > capitulos/capitulo2.txt
+ El flujo de trabajo básico con Git consiste en:
+ 1- Hacer cambios en el repositorio.
+ 2- Añadir los cambios a la zona de intercambio temporal.
+ 3- Hacer un commit de los cambios.
+ 
+
+    ```
