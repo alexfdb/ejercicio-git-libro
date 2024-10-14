@@ -182,6 +182,34 @@ Mostrar quién ha hecho cambios sobre el fichero indice.txt.
 Cambiado a rama 'bibliografia'
  dam   bibliografia  ~  ejercicio-git-libro  cat > bibliografia.txt
 - Chacon, S. and Straub, B. Pro Git. Apress.
+ dam   bibliografia  ~  ejercicio-git-libro  git add .
+ dam   bibliografia  ~  ejercicio-git-libro  git commit -m "Añadida primera referencia bibliográfica."
+[bibliografia 937d489] Añadida primera referencia bibliográfica.
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+ create mode 100644 bibliografia.txt
+ dam   bibliografia  ~  ejercicio-git-libro  git log --graph --all --oneline
+* 937d489 (HEAD -> bibliografia) Añadida primera referencia bibliográfica.
+| * 922f84f (main) Actualización
+| * 6f17f45 Añadido capítulo 4.
+|/  
+* a03772b Añadido el índice .
+* dc0efbf Se crea el indice.
+* 4c015b5 Añadido capítulo 3.
+* b1be62e Añadido capítulo 2.
+* e6ea4e5 Añadido capítulo 1.
+* cae8ad5 (origin/main, origin/HEAD) Initial commit
 
 ```
+
+# Ejercicio 8
+
+Fusionar la rama bibliografía con la rama main.
+
+Mostrar la historia del repositorio incluyendo todas las ramas.
+
+Eliminar la rama bibliografía.
+
+Mostrar de nuevo la historia del repositorio incluyendo todas las ramas.
+
+```code
 
