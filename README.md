@@ -65,13 +65,52 @@ Hacer un commit de los cambios con el mensaje Añadido capítulo 2.
 
 Mostrar las diferencias entre la última versión y dos versiones anteriores. (git que comando tengo que añadir).
 
-    ```code
+```code
 
  dam   main  ~  ejercicio-git-libro  cat > capitulos/capitulo2.txt
  El flujo de trabajo básico con Git consiste en:
  1- Hacer cambios en el repositorio.
  2- Añadir los cambios a la zona de intercambio temporal.
  3- Hacer un commit de los cambios.
- 
+ dam   main  ~  ejercicio-git-libro  git add .
+ dam   main  ~  ejercicio-git-libro  git commit -m "Añadido capítulo 2."
+[main b1be62e] Añadido capítulo 2.
+ 2 files changed, 51 insertions(+)
+ create mode 100644 capitulos/capitulo2.txt
+ dam   main  ~  ejercicio-git-libro  git diff HEAD~2..HEAD
+diff --git a/README.md b/README.md
+index 9a06b52..b3f554b 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,77 @@
+-# ejercicio-git-libro
+\ No newline at end of file
++# Ejercicio de Git "Libro"
++
++## Ejercicio 1
++
++Mostrar el historial de cambios del repositorio, a través del comando log,tanto a través de linea de comandos como modo gráfico, sigue las instrucciones del comando.
++
++Crear la carpeta capítulos y crear dentro de ella el fichero capitulo1.txt con el siguiente texto.
++
 
-    ```
+```
+
+# Ejercicio 3
+
+
+Crear el fichero capitulo3.txt en la carpeta capítulos con el siguiente texto.
+
+Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas.
+
+Añadir los cambios a la zona de intercambio temporal.
+
+Hacer un commit de los cambios con el mensaje Añadido capítulo 3.
+
+Mostrar las diferencias entre la primera y la última versión del repositorio.
+
+```code
+
+
+
+```
