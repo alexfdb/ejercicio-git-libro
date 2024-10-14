@@ -178,6 +178,51 @@ Mostrar quién ha hecho cambios sobre el fichero indice.txt.
 
 ```code
 
-
+ dam   main  ~  ejercicio-git-libro  cat > indice.txt
+ dam   main  ~  ejercicio-git-libro  git add .
+ dam   main  ~  ejercicio-git-libro  git commit -m "Se crea el indice."
+[main dc0efbf] Se crea el indice.
+ 2 files changed, 68 insertions(+)
+ create mode 100644 indice.txt
+ dam   main  ~  ejercicio-git-libro  echo "Indice de los cápitulos, con conceptos avanzados de git" >> indice.txt
+ dam   main  ~  ejercicio-git-libro  git add .
+ dam   main  ~  ejercicio-git-libro  git commit -m "Añadido el índice ."
+[main a03772b] Añadido el índice .
+ 1 file changed, 1 insertion(+)
+ dam   main  ~  ejercicio-git-libro  git annotate indice.txt
+dc0efbfb        (   alexfdb     2024-10-14 16:14:55 +0100       1)Indice de los cápitulos, con conceptos avanzados de git
+a03772b9        (   alexfdb     2024-10-14 16:15:29 +0100       2)Indice de los cápitulos, con conceptos avanzados de git
 
 ```
+
+# Ejercicio 5
+
+Crear una nueva rama bibliografía y mostrar las ramas del repositorio.
+
+```code
+
+dam   main  ~  ejercicio-git-libro  git branch bibliografia
+ dam   main  ~  ejercicio-git-libro  git branch -av
+  bibliografia        a03772b Añadido el índice .
+* main                a03772b [adelante 5] Añadido el índice .
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main cae8ad5 Initial commit
+
+```
+
+# Ejercicio 6
+
+
+Crear el fichero capitulos/capitulo4.txt y añadir el texto siguiente:
+
+En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
+
+Añadir los cambios a la zona de intercambio temporal.
+
+Hacer un commit con el mensaje “Añadido capítulo 4.”
+
+Mostrar la historia del repositorio incluyendo todas las ramas.
+
+
+```code
+
