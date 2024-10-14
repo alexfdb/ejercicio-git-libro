@@ -282,3 +282,79 @@ Eliminar la rama bibliografía.
 Mostrar de nuevo la historia del repositorio incluyendo todas las ramas.
 
 ```code
+
+ dam   main  ~  ejercicio-git-libro  git merge bibliografia
+Ya está actualizado.
+ dam   main  ~  ejercicio-git-libro  git log --graph --all --oneline
+*   780edeb (HEAD -> main) Actualización
+|\  
+| * 964d7c0 (bibliografia) Actualización
+| * 937d489 Añadida primera referencia bibliográfica.
+* | f103fab Actualización
+* | 922f84f Actualización
+* | 6f17f45 Añadido capítulo 4.
+|/  
+* a03772b Añadido el índice .
+* dc0efbf Se crea el indice.
+* 4c015b5 Añadido capítulo 3.
+* b1be62e Añadido capítulo 2.
+* e6ea4e5 Añadido capítulo 1.
+* cae8ad5 (origin/main, origin/HEAD) Initial commit
+ dam   main  ~  ejercicio-git-libro  git branch -d bibliografia
+Eliminada la rama bibliografia (era 964d7c0).
+ dam   main  ~  ejercicio-git-libro  git log --graph --all --oneline
+*   780edeb (HEAD -> main) Actualización
+|\  
+| * 964d7c0 Actualización
+| * 937d489 Añadida primera referencia bibliográfica.
+* | f103fab Actualización
+* | 922f84f Actualización
+* | 6f17f45 Añadido capítulo 4.
+|/  
+* a03772b Añadido el índice .
+* dc0efbf Se crea el indice.
+* 4c015b5 Añadido capítulo 3.
+* b1be62e Añadido capítulo 2.
+* e6ea4e5 Añadido capítulo 1.
+* cae8ad5 (origin/main, origin/HEAD) Initial commit
+ dam   bibliografia  ~  ejercicio-git-libro  git checkout main
+
+ ```
+
+ # Ejericio 9 
+
+Crear la rama bibliografía.
+
+Cambiar a la rama bibliografía.
+
+Cambiar el fichero bibliografia.txt para que contenga las siguientes referencias:
+
+Scott Chacon and Ben Straub. Pro Git. Apress.
+Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014)
+
+Cambiar a la rama main.
+
+Cambiar el fichero bibliografia.txt para que - contenga las siguientes referencias:
+
+Chacon, S. and Straub, B. Pro Git. Apress.
+
+Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
+
+Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Añadida nueva referencia bibliográfica.”
+
+Fusionar la rama bibliografía con la rama main.
+
+Resolver el conflicto dejando el fichero bibliografia.txt con las referencias:
+
+Chacon, S. and Straub, B. Pro Git. Apress.
+
+Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
+
+Hodson, R. Ry’s Git Tutorial. Smashwords (2014)
+
+Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Resuelto conflicto de bibliografía.”
+
+Mostrar la historia del repositorio incluyendo todas las ramas.
+
+```code 
+
