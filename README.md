@@ -226,3 +226,37 @@ Mostrar la historia del repositorio incluyendo todas las ramas.
 
 ```code
 
+ dam   main  ~  ejercicio-git-libro  cat > capitulos/capitulo4.txt
+En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
+ dam   main  ~  ejercicio-git-libro  git add .
+ dam   main  ~  ejercicio-git-libro  git commit -m "Añadido capítulo 4."
+[main 6f17f45] Añadido capítulo 4.
+ 3 files changed, 48 insertions(+), 3 deletions(-)
+ create mode 100644 capitulos/capitulo4.txt
+ dam   main  ~  ejercicio-git-libro  git log --graph --all --oneline
+* 6f17f45 (HEAD -> main) Añadido capítulo 4.
+* a03772b (bibliografia) Añadido el índice .
+* dc0efbf Se crea el indice.
+* 4c015b5 Añadido capítulo 3.
+* b1be62e Añadido capítulo 2.
+* e6ea4e5 Añadido capítulo 1.
+* cae8ad5 (origin/main, origin/HEAD) Initial commit
+
+```
+
+# Ejercicio 7
+
+Cambiar a la rama bibliografía.
+
+Crear el fichero bibliografia.txt y añadir la siguiente referencia:
+
+Chacon, S. and Straub, B. Pro Git. Apress.
+
+Añadir los cambios a la zona de intercambio temporal.
+
+Hacer un commit con el mensaje “Añadida primera referencia bibliográfica.”
+
+Mostrar la historia del repositorio incluyendo todas las ramas.
+
+```code
+
