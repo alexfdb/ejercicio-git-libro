@@ -358,3 +358,80 @@ Mostrar la historia del repositorio incluyendo todas las ramas.
 
 ```code 
 
+ dam   main  ~  ejercicio-git-libro  git branch bibliografia
+ dam   main  ~  ejercicio-git-libro  git checkout bibliografia
+Cambiado a rama 'bibliografia'
+ dam   bibliografia  ~  ejercicio-git-libro  cat > bibliografia.txt
+- Scott Chacon and Ben Straub. Pro Git. Apress.
+- Ryan Hodson. Ry's Git Tutorial. Smashwords (2014)
+
+ dam   bibliografia  ~  ejercicio-git-libro  git add .
+ dam   bibliografia  ~  ejercicio-git-libro  git commit -a -m "Añadida nueva referencia bibliográfica."
+[bibliografia 5629a77] Añadida nueva referencia bibliográfica.
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ dam   bibliografia  ~  ejercicio-git-libro  git merge bibliografia
+Ya está actualizado.
+ dam   bibliografia  ~  ejercicio-git-libro  git commit -a -m "Añadida nueva referencia bibliográfica."
+ dam   bibliografia  ~  ejercicio-git-libro  git checkout main
+Cambiado a rama 'main'
+Tu rama está adelantada a 'origin/main' por 12 commits.
+  (usa "git push" para publicar tus commits locales)
+ dam   main  ~  ejercicio-git-libro  cat > bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+- Loeliger, J. and McCullough, M. Version control with Git. O'Reilly.
+ dam   main  ~  ejercicio-git-libro   git commit -a -m "Añadida nueva referencia bibliográfica."
+[main 0d72afe] Añadida nueva referencia bibliográfica.
+ 1 file changed, 1 insertion(+)
+ dam   main  ~  ejercicio-git-libro  git merge bibliografia
+Auto-fusionando bibliografia.txt
+CONFLICTO (contenido): Conflicto de fusión en bibliografia.txt
+Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+ dam   main  ~  ejercicio-git-libro  1  git merge bibliografia
+error: No es posible hacer merge porque tienes archivos sin fusionar.
+ayuda: Corrígelos en el árbol de trabajo y entonces usa 'git add/rm <archivo>',
+ayuda: como sea apropiado, para marcar la resolución y realizar un commit.
+fatal: Saliendo porque existe un conflicto sin resolver.
+ dam   main  ~  ejercicio-git-libro  128  git merge bibliografia
+fatal: No has concluido la fusión (existe MERGE_HEAD).
+Por favor, realiza un commit con los cambios antes de fusionar.
+ dam   main  ~  ejercicio-git-libro  128  git commit -m "Actualización"
+[main 342a231] Actualización
+ dam   main  ~  ejercicio-git-libro  git merge bibliografia
+Ya está actualizado.
+ dam   main  ~  ejercicio-git-libro  nano bibliografia.txt
+ dam   main  ~  ejercicio-git-libro  git commit -a -m "Solucionado conflicto bibliografía."
+En la rama main
+Tu rama está adelantada a 'origin/main' por 15 commits.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+ dam   main  ~  ejercicio-git-libro  1  git add .
+ dam   main  ~  ejercicio-git-libro  git commit -a -m "Solucionado conflicto bibliografía."
+En la rama main
+Tu rama está adelantada a 'origin/main' por 15 commits.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+ dam   main  ~  ejercicio-git-libro  1  git log --graph --all --oneline
+*   342a231 (HEAD -> main) Actualización
+|\  
+| * 5629a77 (bibliografia) Añadida nueva referencia bibliográfica.
+* | 0d72afe Añadida nueva referencia bibliográfica.
+|/  
+* 7a1d060 Actualización
+*   780edeb Actualización
+|\  
+| * 964d7c0 Actualización
+| * 937d489 Añadida primera referencia bibliográfica.
+* | f103fab Actualización
+* | 922f84f Actualización
+* | 6f17f45 Añadido capítulo 4.
+|/  
+* a03772b Añadido el índice .
+* dc0efbf Se crea el indice.
+* 4c015b5 Añadido capítulo 3.
+* b1be62e Añadido capítulo 2.
+* e6ea4e5 Añadido capítulo 1.
+* cae8ad5 (origin/main, origin/HEAD) Initial commit
+
+```
