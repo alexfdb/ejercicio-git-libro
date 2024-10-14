@@ -435,3 +435,48 @@ nada para hacer commit, el árbol de trabajo está limpio
 * cae8ad5 (origin/main, origin/HEAD) Initial commit
 
 ```
+
+# Paso final
+
+Comprobando el estado del trabajo
+
+```code 
+
+ dam   main  ~  ejercicio-git-libro  git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 15 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     README.md
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+ dam   main  ~  ejercicio-git-libro  git add .
+ dam   main  ~  ejercicio-git-libro  git commit -m "Actualización"
+[main 2ed2df7] Actualización
+ 1 file changed, 77 insertions(+)
+ dam   main  ~  ejercicio-git-libro  git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 16 commits.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+ dam   main  ~  ejercicio-git-libro  git push
+Enumerando objetos: 58, listo.
+Contando objetos: 100% (58/58), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (53/53), listo.
+Escribiendo objetos: 100% (56/56), 8.41 KiB | 2.10 MiB/s, listo.
+Total 56 (delta 22), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (22/22), done.
+To https://github.com/alexfdb/ejercicio-git-libro
+   cae8ad5..2ed2df7  main -> main
+ dam   main  ~  ejercicio-git-libro  git status
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+
+```
