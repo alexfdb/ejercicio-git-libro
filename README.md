@@ -178,6 +178,10 @@ Mostrar quién ha hecho cambios sobre el fichero indice.txt.
 
 ```code
 
-
+ dam   main  ~  ejercicio-git-libro  git checkout bibliografia
+Cambiado a rama 'bibliografia'
+ dam   bibliografia  ~  ejercicio-git-libro  cat > bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
 
 ```
+
