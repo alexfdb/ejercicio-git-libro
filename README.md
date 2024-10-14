@@ -260,3 +260,25 @@ Mostrar la historia del repositorio incluyendo todas las ramas.
 
 ```code
 
+ dam   main  ~  ejercicio-git-libro  git checkout bibliografia
+Cambiado a rama 'bibliografia'
+ dam   bibliografia  ~  ejercicio-git-libro  cat > bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+ dam   bibliografia  ~  ejercicio-git-libro  git add .
+ dam   bibliografia  ~  ejercicio-git-libro  git commit -m "Añadida primera referencia bibliográfica."
+[bibliografia 937d489] Añadida primera referencia bibliográfica.
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+```
+
+# Ejercicio 8
+
+Fusionar la rama bibliografía con la rama main.
+
+Mostrar la historia del repositorio incluyendo todas las ramas.
+
+Eliminar la rama bibliografía.
+
+Mostrar de nuevo la historia del repositorio incluyendo todas las ramas.
+
+```code
